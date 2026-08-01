@@ -1,0 +1,9 @@
+ticker,name,stage,jurisdiction_tier,resource_moz,grade_gt,cash_aud,shares_total,debt_total,last_updated
+NST,Northern Star Resources,producer,1,70.7,1.8,1176000000,1430735312,0,2026-03-16
+CMM,Capricorn Metals,producer,1,9.1,0.85,442000000,456718667,0,2026-03-16
+RRL,Regis Resources,producer,1,7.5,1.2,930000000,757250000,0,2026-03-19
+RMS,Ramelius Resources,producer,1,12,1.8,658721000,1911243683,0,2026-03-20
+BGL,Bellevue Gold,producer,1,3.2,9.0,165065000,1480748913,100000000,2026-03-20
+
+WGX,Westgold Resrouces,producer,1,16.3,2.18,521000000,944831564,0,2026-03-20
+GMD,Genesis Minerals,producer,1,14.7,2.2,373300000,1142328193,0,2026-03-20

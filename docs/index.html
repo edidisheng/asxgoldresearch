@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASX Gold Producer Research</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #ffffff; color: #000000;
+         font-family: "Times New Roman", Times, Georgia, serif;
+         font-size: 16px; line-height: 1.5; }
+  .page { max-width: 880px; margin: 0 auto; padding: 40px 24px 60px; }
+  h1 { font-size: 26px; font-weight: bold; }
+  .sub { font-size: 14px; color: #444; margin-top: 2px; }
+  nav { margin: 14px 0 30px; padding: 8px 0; border-top: 1px solid #000;
+        border-bottom: 1px solid #000; font-size: 14px; }
+  nav a { color: #000; text-decoration: none; margin-right: 18px; }
+  nav a:hover { text-decoration: underline; }
+  h2 { font-size: 19px; margin: 40px 0 6px; }
+  .note { font-size: 14px; color: #444; font-style: italic; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 10px 0 6px; }
+  th { text-align: left; padding: 6px 8px; border-top: 1.5px solid #000;
+       border-bottom: 1px solid #000; cursor: pointer; user-select: none;
+       font-weight: bold; white-space: nowrap; }
+  td { padding: 5px 8px; border-bottom: 1px solid #ddd; white-space: nowrap; }
+  tr:last-child td { border-bottom: 1.5px solid #000; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  img.chart { width: 100%; margin: 10px 0; border: 1px solid #ccc; }
+  select { font-family: inherit; font-size: 15px; padding: 4px 8px; margin: 8px 0 14px;
+           background: #fff; color: #000; border: 1px solid #000; }
+  .md h1, .md h2 { font-size: 18px; margin: 20px 0 8px; }
+  .md h3 { font-size: 16px; margin: 16px 0 6px; }
+  .md p, .md li { margin: 6px 0; }
+  .md ul { padding-left: 22px; }
+  .md hr { border: none; border-top: 1px solid #ccc; margin: 14px 0; }
+  .md table td, .md table th { white-space: normal; }
+  dl { margin: 8px 0; }
+  dt { font-weight: bold; margin-top: 10px; }
+  dd { margin-left: 0; font-size: 15px; }
+  footer { margin-top: 50px; padding-top: 10px; border-top: 1px solid #000;
+           font-size: 13px; color: #444; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>ASX Gold Producer Research</h1>
+  <div class="sub" id="generated">Loading…</div>
+  <nav>
+    <a href="#screener">EV/oz Screener</a>
+    <a href="#margin">Margin Analysis</a>
+    <a href="#macro">Gold Macro</a>
+    <a href="#quarterly">Quarterly Analysis</a>
+  </nav>
+
+  <h2 id="screener">1. EV/oz Screener</h2>
+  <p class="note">Ranked by discount to grade- and jurisdiction-adjusted peer average.
+     Prices update each weekday after ASX close. Click a column header to sort.</p>
+  <div id="screener-table"></div>
+
+  <h2 id="margin">2. Margin-Adjusted Valuation</h2>
+  <p class="note" id="margin-note"></p>
+  <img class="chart" src="assets/margin_scatter.png" alt="EV/oz vs margin scatter">
+  <div id="margin-table"></div>
+
+  <h2 id="macro">3. Gold Macro Dashboard</h2>
+  <dl id="macro-readings"></dl>
+  <img class="chart" src="assets/gold_dashboard.png" alt="Gold regime dashboard">
+
+  <h2 id="quarterly">4. Quarterly Analysis</h2>
+  <p class="note" id="q-date"></p>
+  <select id="company-select"></select>
+  <div class="md" id="company-body"></div>
+
+  <footer>
+    Personal research project: quantitative screening with AI-assisted quarterly
+    analysis. Nothing on this page is financial advice.
+  </footer>
+</div>
+
+<script>
+const fmt = (x, dp=0) => x == null ? "—" : Number(x).toLocaleString("en-AU",
+                         {minimumFractionDigits: dp, maximumFractionDigits: dp});
+
+function makeTable(el, rows, cols) {
+  if (!rows || !rows.length) { el.innerHTML = "<p class='note'>No data available.</p>"; return; }
+  let sortKey = null, asc = false;
+  function render() {
+    const data = [...rows];
+    if (sortKey) data.sort((a, b) => (a[sortKey] > b[sortKey] ? 1 : -1) * (asc ? 1 : -1));
+    let h = "<table><tr>" + cols.map(c => `<th data-k="${c.k}">${c.label}</th>`).join("") + "</tr>";
+    for (const r of data) {
+      h += "<tr>" + cols.map(c => {
+        let v = r[c.k];
+        let txt = c.num ? fmt(v, c.dp || 0) : (v ?? "—");
+        if (c.pct && v != null) txt = (v > 0 ? "+" : "") + fmt(v, 1) + "%";
+        if (c.aud && v != null) txt = "A$" + fmt(v);
+        let style = "";
+        if (c.shade && v != null) {
+          const bg = v > 20 ? "#e4efe4" : v < -20 ? "#f4e3e1" : "#f4efdc";
+          style = ` style="background:${bg}"`;
+        }
+        return `<td class="${c.num ? "num" : ""}"${style}>${txt}</td>`;
+      }).join("") + "</tr>";
+    }
+    el.innerHTML = h + "</table>";
+    el.querySelectorAll("th").forEach(th => th.onclick = () => {
+      const k = th.dataset.k;
+      asc = (sortKey === k) ? !asc : false;
+      sortKey = k; render();
+    });
+  }
+  render();
+}
+
+fetch("data/site_data.json").then(r => r.json()).then(d => {
+  document.getElementById("generated").textContent = "Data refreshed " + d.generated_utc +
+    (d.errors.length ? " — some sections unavailable" : "");
+
+  // 1. screener
+  makeTable(document.getElementById("screener-table"), d.screener, [
+    {k: "ticker", label: "Ticker"}, {k: "name", label: "Company"},
+    {k: "stage", label: "Stage"}, {k: "price", label: "Price", num: true, dp: 2},
+    {k: "ev_oz", label: "EV/oz", num: true, aud: true},
+    {k: "adj_peer_ev_oz", label: "Adj. peer", num: true, aud: true},
+    {k: "discount_pct", label: "Discount", num: true, pct: true, shade: true},
+  ]);
+
+  // 2. margin
+  if (d.margin) {
+    document.getElementById("margin-note").textContent =
+      `Producers only. Fitted cross-section implies each A$100/oz of margin adds ` +
+      `~A$${d.margin.slope_per_100}/oz of EV (R² ${d.margin.r2}); spot A$${fmt(d.margin.spot_aud)}/oz. ` +
+      `Positive mispricing = cheap for its cost quality.`;
+    makeTable(document.getElementById("margin-table"), d.margin.rows, [
+      {k: "ticker", label: "Ticker"},
+      {k: "aisc_aud_oz", label: "AISC", num: true, aud: true},
+      {k: "margin", label: "Margin/oz", num: true, aud: true},
+      {k: "ev_oz", label: "EV/oz", num: true, aud: true},
+      {k: "fair_ev_oz", label: "Fair EV/oz", num: true, aud: true},
+      {k: "mispricing_pct", label: "Mispricing", num: true, pct: true},
+    ]);
+  }
+
+  // 4. macro readings
+  if (d.dashboard) {
+    const db = d.dashboard;
+    let h = `<dt>Trend regime</dt><dd>${db.regime}. AUD gold $${fmt(db.price)} vs 200-day
+             average $${fmt(db.ma200)}; 12-month momentum ${db.mom12m_pct > 0 ? "+" : ""}${db.mom12m_pct}%;
+             stretch ${db.stretch_pct > 0 ? "+" : ""}${db.stretch_pct}% above the average
+             (${db.stretch_pctile}th percentile since 2010).</dd>`;
+    for (const m of db.macro) {
+      h += `<dt>${m.name}</dt><dd>${m.detail} — ${m.reading}.</dd>`;
+    }
+    h += `<dt>Futures positioning (COT)</dt><dd>Managed-money net ${db.cot_net_pct_oi}% of open
+          interest, ${db.cot_pctile_3y}th percentile of three years — ${db.cot_note}.</dd>`;
+    document.getElementById("macro-readings").innerHTML = h;
+  }
+
+  // 4. quarterly analysis — comparative ranking is the default view,
+  //    individual company notes selectable from the same dropdown
+  if (d.quarterly) {
+    document.getElementById("q-date").textContent =
+      "AI-generated from company quarterly reports; run manually each quarter. " +
+      "Run date: " + d.quarterly_date + ".";
+    const sel = document.getElementById("company-select");
+    const body = document.getElementById("company-body");
+    const COMP = "__comparison__";
+    let opts = `<option value="${COMP}">Comparative Ranking (all companies)</option>`;
+    opts += Object.keys(d.quarterly.companies).map(t =>
+      `<option value="${t}">${t} — individual analysis</option>`).join("");
+    sel.innerHTML = opts;
+    const show = v => body.innerHTML = marked.parse(
+      v === COMP ? (d.quarterly.comparison || "") : (d.quarterly.companies[v] || ""));
+    sel.onchange = () => show(sel.value);
+    show(COMP);
+  }
+});
+</script>
+</body>
+</html>
