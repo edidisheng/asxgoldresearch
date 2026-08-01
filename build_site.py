@@ -51,7 +51,7 @@ try:
     screener = results_df[[c for c in cols if c in results_df.columns]].copy()
     screener = screener.sort_values("discount_pct", ascending=False)
     site["screener"] = json.loads(screener.round(1).to_json(orient="records"))
-except Exception as e:
+except (Exception, SystemExit) as e:
     site["errors"].append(f"screener: {e}")
     site["screener"] = []
     results_df = None
@@ -106,7 +106,7 @@ try:
     plt.tight_layout()
     plt.savefig(DOCS / "assets" / "margin_scatter.png", dpi=150)
     plt.close()
-except Exception as e:
+except (Exception, SystemExit) as e:
     site["errors"].append(f"margin: {e}")
     site["margin"] = None
 
@@ -148,7 +148,7 @@ try:
     ax3.legend(loc="upper left", fontsize=8)
     plt.savefig(DOCS / "assets" / "gold_dashboard.png", dpi=150, bbox_inches="tight")
     plt.close()
-except Exception as e:
+except (Exception, SystemExit) as e:
     site["errors"].append(f"dashboard: {e}")
     site["dashboard"] = None
 
@@ -175,7 +175,7 @@ try:
         t = re.search(r"\((\w+)\)", title)
         companies[t.group(1) if t else title] = "## " + p.strip()
     site["quarterly"] = {"comparison": comparison, "companies": companies}
-except Exception as e:
+except (Exception, SystemExit) as e:
     site["errors"].append(f"quarterly: {e}")
     site["quarterly"] = None
 
