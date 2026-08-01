@@ -1,0 +1,35 @@
+name: Daily site data refresh
+
+on:
+  schedule:
+    - cron: "0 9 * * 1-5"   # 09:00 UTC = 7pm AEST, after ASX close, weekdays
+  workflow_dispatch:          # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pandas numpy yfinance statsmodels matplotlib fredapi python-dotenv requests
+
+      - name: Build site data
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python build_site.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "site-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs
+          git diff --staged --quiet && echo "no changes" || git commit -m "daily data refresh"
+          git push
