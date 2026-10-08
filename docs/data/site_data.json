@@ -1,27 +1,25 @@
 {
- "generated_utc": "2026-10-07 16:18 UTC",
- "errors": [
-  "dashboard: No objects to concatenate"
- ],
+ "generated_utc": "2026-10-08 16:20 UTC",
+ "errors": [],
  "screener": [
   {
    "ticker": "WGX",
    "name": "Westgold Resrouces",
    "stage": "producer",
-   "price": 5.2,
-   "ev_oz": 271.8,
-   "adj_peer_ev_oz": 584.7,
-   "discount_pct": 53.5,
+   "price": 5.1,
+   "ev_oz": 264.2,
+   "adj_peer_ev_oz": 578.5,
+   "discount_pct": 54.3,
    "signal": "CHEAP \u2705"
   },
   {
    "ticker": "NST",
    "name": "Northern Star Resources",
    "stage": "producer",
-   "price": 24.4,
-   "ev_oz": 476.5,
-   "adj_peer_ev_oz": 550.6,
-   "discount_pct": 13.4,
+   "price": 24.0,
+   "ev_oz": 469.7,
+   "adj_peer_ev_oz": 544.3,
+   "discount_pct": 13.7,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
@@ -29,9 +27,9 @@
    "name": "Genesis Minerals",
    "stage": "producer",
    "price": 7.1,
-   "ev_oz": 528.7,
-   "adj_peer_ev_oz": 541.9,
-   "discount_pct": 2.4,
+   "ev_oz": 525.6,
+   "adj_peer_ev_oz": 535.0,
+   "discount_pct": 1.8,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
@@ -39,9 +37,9 @@
    "name": "Ramelius Resources",
    "stage": "producer",
    "price": 3.7,
-   "ev_oz": 540.8,
-   "adj_peer_ev_oz": 539.9,
-   "discount_pct": -0.2,
+   "ev_oz": 536.0,
+   "adj_peer_ev_oz": 533.2,
+   "discount_pct": -0.5,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
@@ -49,9 +47,9 @@
    "name": "Regis Resources",
    "stage": "producer",
    "price": 7.1,
-   "ev_oz": 593.9,
-   "adj_peer_ev_oz": 531.0,
-   "discount_pct": -11.8,
+   "ev_oz": 591.9,
+   "adj_peer_ev_oz": 523.9,
+   "discount_pct": -13.0,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
@@ -59,86 +57,113 @@
    "name": "Bellevue Gold",
    "stage": "producer",
    "price": 1.5,
-   "ev_oz": 676.1,
-   "adj_peer_ev_oz": 517.3,
-   "discount_pct": -30.7,
+   "ev_oz": 666.8,
+   "adj_peer_ev_oz": 511.4,
+   "discount_pct": -30.4,
    "signal": "RICH  \ud83d\udea9"
   },
   {
    "ticker": "CMM",
    "name": "Capricorn Metals",
    "stage": "producer",
-   "price": 14.8,
-   "ev_oz": 692.2,
-   "adj_peer_ev_oz": 514.6,
-   "discount_pct": -34.5,
+   "price": 14.5,
+   "ev_oz": 681.2,
+   "adj_peer_ev_oz": 509.0,
+   "discount_pct": -33.8,
    "signal": "RICH  \ud83d\udea9"
   }
  ],
  "margin": {
-  "spot_aud": 5941,
-  "slope_per_100": 10,
-  "r2": 0.14,
+  "spot_aud": 5943,
+  "slope_per_100": 9,
+  "r2": 0.13,
   "rows": [
    {
     "ticker": "WGX",
     "aisc_aud_oz": 2802,
-    "margin": 3138.7,
-    "ev_oz": 271.8,
-    "fair_ev_oz": 513.6,
-    "mispricing_pct": 47.1
+    "margin": 3140.9,
+    "ev_oz": 264.2,
+    "fair_ev_oz": 508.2,
+    "mispricing_pct": 48.0
    },
    {
     "ticker": "NST",
     "aisc_aud_oz": 2651,
-    "margin": 3289.7,
-    "ev_oz": 476.5,
-    "fair_ev_oz": 528.1,
-    "mispricing_pct": 9.8
+    "margin": 3291.9,
+    "ev_oz": 469.7,
+    "fair_ev_oz": 522.2,
+    "mispricing_pct": 10.1
    },
    {
     "ticker": "RMS",
     "aisc_aud_oz": 1973,
-    "margin": 3967.7,
-    "ev_oz": 540.8,
-    "fair_ev_oz": 593.1,
-    "mispricing_pct": 8.8
+    "margin": 3969.9,
+    "ev_oz": 536.0,
+    "fair_ev_oz": 584.7,
+    "mispricing_pct": 8.3
    },
    {
     "ticker": "GMD",
     "aisc_aud_oz": 2797,
-    "margin": 3143.7,
-    "ev_oz": 528.7,
-    "fair_ev_oz": 514.1,
-    "mispricing_pct": -2.8
+    "margin": 3145.9,
+    "ev_oz": 525.6,
+    "fair_ev_oz": 508.7,
+    "mispricing_pct": -3.3
    },
    {
     "ticker": "CMM",
     "aisc_aud_oz": 1617,
-    "margin": 4323.7,
-    "ev_oz": 692.2,
-    "fair_ev_oz": 627.3,
+    "margin": 4325.9,
+    "ev_oz": 681.2,
+    "fair_ev_oz": 617.5,
     "mispricing_pct": -10.3
    },
    {
     "ticker": "RRL",
     "aisc_aud_oz": 3244,
-    "margin": 2696.7,
-    "ev_oz": 593.9,
-    "fair_ev_oz": 471.2,
-    "mispricing_pct": -26.0
+    "margin": 2698.9,
+    "ev_oz": 591.9,
+    "fair_ev_oz": 467.5,
+    "mispricing_pct": -26.6
    },
    {
     "ticker": "BGL",
     "aisc_aud_oz": 2604,
-    "margin": 3336.7,
-    "ev_oz": 676.1,
-    "fair_ev_oz": 532.6,
-    "mispricing_pct": -26.9
+    "margin": 3338.9,
+    "ev_oz": 666.8,
+    "fair_ev_oz": 526.5,
+    "mispricing_pct": -26.7
    }
   ]
  },
- "dashboard": null,
+ "dashboard": {
+  "regime": "BEAR",
+  "price": 5943,
+  "ma200": 6478,
+  "mom12m_pct": -1.8,
+  "stretch_pct": -8.3,
+  "stretch_pctile": 4,
+  "macro": [
+   {
+    "name": "Real 10y yield",
+    "detail": "2.91%, +1.11pp over 12m",
+    "reading": "headwind (rising)"
+   },
+   {
+    "name": "US Dollar (DXY)",
+    "detail": "102.3, +3.5% over 12m",
+    "reading": "headwind (USD rising)"
+   },
+   {
+    "name": "5y breakeven infl.",
+    "detail": "2.37%, 3y z-score +0.14",
+    "reading": "neutral"
+   }
+  ],
+  "cot_net_pct_oi": 29.6,
+  "cot_pctile_3y": 52,
+  "cot_note": "not extreme"
+ },
  "quarterly_date": "2026-07-31",
  "quarterly": {
   "comparison": "## COMPARATIVE RANKING & PORTFOLIO CONSTRUCTION\n\n# ASX Gold Producer Comparative Investment Ranking\n## Macro Overlay: Bullish Gold \u2014 Strong Real Asset Demand, Central Bank Buying, USD Weakness\n\n*In a bullish gold environment, the key differentiators are: (1) unhedged spot price leverage, (2) low AISC to maximise margin expansion, (3) balance sheet strength to self-fund growth without dilution, and (4) near-term catalysts to crystallise re-rating. A 50% spot price rise compounds disproportionately for low-cost, unhedged, debt-free producers \u2014 cost structure and hedge book are the primary valuation screens before EV/oz.*\n\n---\n\n## Ranking\n\n---\n\n### Rank #1 \u2014 WGX (Westgold Resources)\n\n- **Why buy:** The 50% EV/oz discount to peers is the widest in the screener and is almost certainly a timing artefact \u2014 the market is waiting for the August FY27 guidance release before re-rating a debt-free company sitting on A$939M in treasury that beat FY26 production guidance and is 100% unhedged. In a bullish gold environment, the combination of zero debt, no hedge book, and multiple ramping growth assets means earnings leverage to spot is close to maximal across the peer group, and the upcoming August catalyst provides a specific, near-term re-rating trigger rather than an indefinite wait.\n- **Valuation:** A$242/oz vs A$480/oz peer benchmark \u2014 50% discount, the deepest in the screener. The discount is mechanically explainable: Beta Hunt ventilation overhang, non-sustaining capex blowout obscuring FCF optics, and guidance vacuum ahead of August. None of these are structural impairments to the asset base. At current gold prices, WGX is generating approximately A$233M in underlying cash per quarter; the A$939M balance sheet already represents most of the current market cap in liquid assets. The August results need to deliver credible FY27 guidance \u2014 particularly capex discipline \u2014 to close the discount, but the asymmetry here is compelling.\n- **Key risk:** Beta Hunt permanent ventilation fix delayed beyond Q2 FY27 \u2014 this would extend Southern Goldfields AISC above A$3,300/oz for a third consecutive half-year, sustaining the operational overhang and potentially prompting a FY27 guidance miss on group costs. The non-sustaining capex pattern (A$341M vs A$270M guided) also means FY27 guidance must show credible capex normalisation or the market will apply a persistent FCF discount.\n- **Profitability:** Group FY26 AISC of A$2,841/oz is mid-table relative to peers, but the mix issue is critical \u2014 Meekatharra and Fortnum are performing well while Beta Hunt/Southern Goldfields drags at A$3,331/oz. The cost trajectory is directionally improving (Q4 AISC A$2,802/oz vs Q3 A$2,931/oz) driven by volume rather than unit cost reduction, which is acceptable given ramp-stage operations. Bluebird-South Junction reaching sustainable 1Mtpa throughput is the inflection that will pull group AISC structurally lower into FY27 without relying on Beta Hunt normalisation.\n- **Verdict:** **Strong Buy** \u2014 deepest discount in the screener, fortress balance sheet, maximum spot leverage, imminent hard catalyst.\n\n---\n\n### Rank #2 \u2014 RMS (Ramelius Resources)\n\n- **Why buy:** Never Never underground is delivering ahead of schedule with grades (5.95g/t) and metallurgical recoveries (82\u201384%) both exceeding model assumptions \u2014 this is the rare combination of a growth asset outperforming DFS assumptions at an early stage. Paired with a debt-free balance sheet carrying A$649M in liquid assets (set to grow further on the A$210M Edna May cash settlement), the stock offers growth-at-a-reasonable-price: a 4% EV/oz discount with a genuine organic production growth pathway to 4.3Mtpa by FY28.\n- **Valuation:** A$431/oz vs A$449/oz benchmark \u2014 4% discount, modest but arguably understated. The screener does not capture the near-term Edna May cash influx (A$210M), the ongoing buyback (A$140M of A$250M complete), or the Mt Magnet expansion optionality. FY27 guidance release in the September quarter is the immediate re-rating catalyst \u2014 the information vacuum on production bridge (Penny closure vs Never Never ramp) explains the discount and represents an opportunity for investors who have read the operational detail in this report.\n- **Key risk:** Penny mine closes December 2026, removing a high-grade contributor without a confirmed direct replacement \u2014 if Never Never's ramp to 1Mtpa takes longer than guided, or if the Mt Magnet plant upgrade (Circuit 1 refurbishment, Circuit 2 EPC) encounters delays, FY27 production could soften in H1 before recovering, creating a visible near-term guidance miss risk.\n- **Profitability:** FY26 AISC of A$1,983/oz (underlying A$1,840/oz excluding one-off reclassification) is one of the strongest cost profiles in the peer group \u2014 only CMM is demonstrably cheaper. At current gold prices above A$7,000/oz, RMS is generating AISC margins in excess of A$5,000/oz on its best ounces. The cost trajectory is favourable: Never Never at high grade dilutes the Mt Magnet average cost, and the plant upgrade removes a throughput constraint rather than adding cost.\n- **Verdict:** **Strong Buy** \u2014 best-in-class cost structure, outperforming growth asset, near-term cash catalyst, reasonable valuation.\n\n---\n\n### Rank #3 \u2014 NST (Northern Star Resources)\n\n- **Why buy:** The largest ASX-listed gold producer by production (1,543koz FY26) is on the cusp of a transformational step-change via the KCGM mill expansion to 27Mtpa \u2014 commissioning has commenced on schedule, and Pogo delivered its fifth consecutive annual record. At A$1,235M cash with no drawn debt and net mine cash flow of A$443M in a single quarter, NST has the financial firepower to fund the expansion internally while executing buybacks, making it the highest-quality large-cap compounder in the peer group.\n- **Valuation:** A$386/oz vs A$456/oz benchmark \u2014 15% discount. For a tier-1 producer of this quality, a 15% discount is genuinely attractive. The discount reflects three transitional concerns \u2014 KCGM ramp-up earnings dilution in 1H FY27, withdrawn medium-term guidance, and CEO transition \u2014 none of which impair the underlying asset quality. The 20 August FY27 guidance release is the single most important catalyst in the peer group calendar: if KCGM production and cost trajectory is credible, the discount closes materially. The hedge book (788koz at A$3,397/oz) is the one meaningful structural drag in a bullish gold environment, but it is being wound down with no new hedges added since August 2024.\n- **Key risk:** KCGM mill expansion ramp-up using low-grade ore feed in 1H FY27 produces a weak production and high-AISC quarter, compounded by simultaneous planned shutdowns across all three production centres in September quarter \u2014 this is a high-probability near-term earnings miss that is well-flagged but will still pressure the share price. Leadership transition during the most critical operational phase adds execution uncertainty.\n- **Profitability:** Group FY26 AISC of A$2,698/oz is the best among the larger producers, with Kalgoorlie at A$2,589/oz and Pogo at US$1,384/oz standing out. Yandal's A$3,228/oz remains a drag but is improving. All-in costs (AIC) of A$4,098/oz are elevated due to KCGM growth capex and will remain so through at least 1H FY27 \u2014 investors need to look through reported AIC to mine-level cash margins, which are excellent.\n- **Verdict:** **Buy** \u2014 highest-quality asset base in the peer group at a rare discount; near-term production weakness is transitional, not structural.\n\n---\n\n### Rank #4 \u2014 GMD (Genesis Minerals)\n\n- **Why buy:** Three consecutive years of guidance delivery, record FY26 cash generation (A$899M), and a transformational merger with Vault that \u2014 if completed \u2014 would create a 600\u2013700kozpa Western Australian producer with Tier-1 scale. The operational execution track record is the strongest in the mid-cap cohort, and at a 7% EV/oz discount the market is ascribing minimal value to the Vault merger optionality.\n- **Valuation:** A$418/oz vs A$451/oz benchmark \u2014 7% discount. The discount is explained by near-term complexity: FY27 cost guidance is higher and wider (A$2,750\u20133,050/oz vs FY26's A$2,670/oz), A$110\u2013140M tax catch-up in Q2 FY27 will visibly reduce cash, and the Vault merger introduces integration uncertainty. However, none of these are asset-quality issues \u2014 the underlying Leonora and Gwalia operations are performing well, and the Byrnecut contractor transition at Leonora has already reached FY26 performance levels. The discount is reasonable compensation for the near-term noise, not a reflection of impaired fundamentals.\n- **Key risk:** Vault merger failure or material integration delay \u2014 if the scheme does not proceed, GMD faces a standalone FY27 with elevated capex (A$380\u2013420M), higher AISC, and the Tower Hill mill capex reappearing on the budget. The A$110\u2013140M tax catch-up payment is a near-term cash visibility issue that could be misread by the market as deteriorating FCF.\n- **Profitability:** FY26 AISC of A$2,670/oz was mid-range and at the top of guidance \u2014 not exceptional but consistent. FY27 AISC step-up to A$2,900/oz midpoint is the primary concern; management attributes this to growth capital intensity and inflation during a heavy investment phase, which is credible given the asset development pipeline. The Q4 FY26 surge in mining costs (A$119.8M vs A$94.1M in Q3) needs to normalise in FY27 to validate the guidance range.\n- **Verdict:** **Buy** \u2014 execution track record is best-in-class, merger optionality is unpriced, and the discount is earned by complexity rather than quality impairment.\n\n---\n\n### Rank #5 \u2014 RRL (Regis Resources)\n\n- **Why buy:** Record A$1.18B cash balance with zero debt provides a McPhillamys optionality position essentially for free \u2014 a post-tax NPV of A$1.13B at A$4,000/oz (well below current spot) embedded in a company generating A$667M annual cash from two producing assets. The production growth guidance into FY27 (360\u2013400koz) combined with the sector-leading balance sheet creates a compelling risk-reward if McPhillamys permitting resolves positively.\n- **Valuation:** A$491/oz vs A$439/oz benchmark \u2014 12% premium. The premium is not egregious given A$1.18B cash and McPhillamys optionality, but it is a premium nonetheless, which is unusual for a company with a meaningful FY27 AISC step-up and an unresolved permitting binary. The EV screener almost certainly does not adjust for the A$1.18B cash pile \u2014 on a cash-adjusted basis, the operating assets are trading at a material discount to peers. That said, the 12% premium on the headline screener means investors are not being handed a free lunch, and the AISC inflation into FY27 is a genuine headwind.\n- **Key risk:** McPhillamys Section 10 Aboriginal land declaration judicial review is a binary outcome with a long resolution timeline \u2014 an adverse ruling effectively renders the A$1.08B capex investment undeployable and removes the primary growth optionality that underpins the premium rating. Separately, FY27 AISC guidance midpoint of A$3,190/oz represents an ~8% step-up from FY26 with approximately A$88/oz in non-cash embedded costs \u2014 if diesel prices remain elevated and BuckWell ramp-up is delayed, the top end of guidance (A$3,390/oz) is genuinely at risk.\n- **Profitability:** FY26 AISC of A$2,945/oz is acceptable but not impressive relative to the peer group \u2014 Duketon's A$3,642/oz in Q4 is structurally elevated, and Tropicana's quality is partly masked by large non-cash charges. The FY27 cost step-up means RRL is moving in the wrong direction on margins precisely when other operators are improving \u2014 this is the central tension in the thesis. The A$667M annual cash generation validates the balance sheet quality even at these AISC levels.\n- **Verdict:** **Hold** \u2014 exceptional balance sheet and unpriced McPhillamys option, but premium rating with rising costs and a permitting binary limits near-term upside relative to cheaper peers.\n\n---\n\n### Rank #6 \u2014 BGL (Bellevue Gold)\n\n- **Why buy:** Genuinely high-grade, high-margin, net-zero operation with a rapidly shrinking hedge book \u2014 from 152koz at the start of FY26 to 68.7koz remaining \u2014 that is unlocking spot price leverage precisely as gold prices are elevated. Record quarterly production, zero mandatory hedge deliveries until end-June 2027, and a credible FY27 production growth path to 160koz+ make this a legitimate quality name.\n- **Valuation:** A$563/oz vs A$427/oz benchmark \u2014 32% premium, the second-richest in the screener after CMM. Unlike CMM, BGL does not have a clear near-term transformational production step-change to justify the premium \u2014 KEP-equivalent catalysts are absent. The premium is priced on quality (high grade, strong FCF, hedge reduction) rather than near-term earnings inflection. In a bullish gold environment, the remaining 68.7koz hedge book at A$3,004/oz is being sold at a ~51% discount to spot \u2014 this is a real economic cost that the premium valuation must overcome. FY27 AISC guidance stepping up to A$2,950/oz midpoint (vs A$2,827/oz in FY26) \u2014 while partly accounting-driven \u2014 compresses the margin improvement narrative.\n\n  > **\u26a0\ufe0f Partial Value Trap Alert:** BGL is not a pure value trap \u2014 the operational quality is genuine and the hedge book is contracting \u2014 but the 32% premium with a 13% AISC step-up, a contractor transition execution risk concentrated in the very next quarter, and a small net cash position (A$106M) relative to the premium rating creates meaningful downside if September quarter costs disappoint. Quality is being priced correctly; the question is whether the premium leaves sufficient margin of safety for new entry.\n\n- **Key risk:** Barminco contractor transition in the September quarter \u2014 the first full quarter under the new contractor is also the quarter most exposed to mobilisation risk and the period when FY27 cost credibility is established. Any slippage in production or unit cost would immediately test the premium valuation and could trigger a sharp de-rating.\n- **Profitability:** FY26 AISC of A$2,827/oz is decent but not exceptional \u2014 the high-grade (4.2g/t surface stockpile, ~A$9,000+/oz theoretical recovered value per tonne at spot) should be producing stronger margins. The FY27 AISC step-up to A$2,950/oz midpoint is largely accounting reclassification, but the contractor transition and paste plant capital do add genuine near-term cash pressure. The 96% gold recovery rate is genuinely impressive metallurgical performance and a quality indicator.\n- **Verdict:** **Hold** \u2014 operational quality is real, hedge unwind is value-creating, but the 32% premium with a near-term execution test and rising AISC guidance makes new entry at current levels unattractive relative to WGX, RMS, and NST.\n\n---\n\n### Rank #7 \u2014 CMM (Capricorn Metals)\n\n- **Why buy:** Sub-A$1,630/oz AISC in an A$7,000+/oz gold price environment is the best cost-to-price margin ratio in the screener by a substantial margin. KEP commissioning in Q1 FY27 delivers a near-term production step-change to ~150kozpa, and MGGP's Orion South at 895koz @ 2.9g/t is a genuinely high-grade second mine in development. The A$507M cash-and-zero-debt balance sheet is proportionally the strongest in the peer group.\n- **Valuation:** A$591/oz vs A$422/oz benchmark \u2014 40% premium, the richest in the screener. This is the critical constraint on ranking. The quality is unambiguous, but at 40% above peers on a grade-and-jurisdiction-adjusted basis, the market has comprehensively priced the KEP commissioning, the MGGP optionality, and the cost structure advantage. For a new long position entry today, paying 40% over peers for quality is expensive even when the quality is real \u2014 the upside from here requires either gold prices to surprise further to the upside (levering the AISC margin advantage), KEP to ramp materially above 150kozpa, or MGGP to accelerate toward development. All are possible in a bullish gold environment but are already partially discounted.\n\n  > **\u26a0\ufe0f Rich Rating Note:** CMM is the highest-quality operator in the peer group on cost metrics and balance sheet. It is NOT a value trap \u2014 the premium is earned. However, at 40% above peers, investors entering today are paying for perfection: any KEP commissioning delay, MGGP permitting setback, or gold price consolidation will compress the premium materially. Quality worth owning, but sizing should reflect the valuation constraint.\n\n- **Key risk:** MGGP permitting in a dual-jurisdiction (federal + WA state) process has no firm timeline \u2014 this is the key execution risk on the growth thesis that justifies most of the second-mine premium. If the federal approvals extend materially, the current EV/oz is pricing in a second mine that may be 3\u20135 years from production.\n- **Profitability:** AISC of A$1,617/oz at KGP is simply exceptional \u2014 in a peer group where A$2,700/oz is considered good, CMM's A$1,617/oz generates cash margins that are 60\u201370% higher per ounce. The KEP commissioning will temporarily disrupt the cost profile but should re-set AISC lower on a per-ounce basis as production scales. Underlying cash costs of A$1,249/oz provide enormous buffer against any gold price weakness \u2014 this is the most defensive AISC profile in the group.\n- **Verdict:** **Hold** \u2014 best operational quality in the screener but 40% premium leaves insufficient margin of safety for new entry; accumulate on any valuation weakness.\n\n---\n\n\n---\n\n## Summary Rankings Table\n\n| Rank | Ticker | Verdict | EV/oz Discount | Key Attraction |\n|------|--------|---------|---------------|----------------|\n| 1 | **WGX** | Strong Buy | 50% cheap | Deepest discount, debt-free, max spot leverage, August catalyst |\n| 2 | **RMS** | Strong Buy | 4% cheap | Best-in-class AISC, Never Never outperforming, imminent cash catalyst |\n| 3 | **NST** | Buy | 15% cheap | Tier-1 asset base, KCGM transformational, near-term guidance catalyst |\n| 4 | **GMD** | Buy | 7% cheap | Consistent execution, Vault merger optionality unpriced |\n| 5 | **RRL** | Hold | 12% rich | Record cash balance, McPhillamys option, but rising AISC and permitting binary |\n| 6 | **BGL** | Hold | 32% rich | Genuine quality, hedge unwind value, but premium too high for new entry risk |\n| 7 | **CMM** | Hold | 40% rich | Best cost profile in screener, earned premium, but priced for perfection |\n\n\n*Cheap signal is a value trap signal here \u2014 discount reflects real execution risk, not mispricing.*\n\n---\n\n## Portfolio Construction Note\n\nIn a bullish gold environment, position sizing should aggressively weight toward maximum unhedged spot leverage at the cheapest entry point \u2014 accordingly, WGX and RMS warrant the largest allocations (30\u201335% combined), as together they offer the widest valuation discount to peers with strong operational momentum and imminent hard catalysts that provide a defined re-rating timeline rather than an open-ended wait. NST and GMD should constitute the core quality anchor positions (25\u201330% combined), providing large-cap liquidity, genuine tier-1 asset quality, and diversification against single-asset execution risk, with NST sized toward the larger weight given the KCGM step-change optionality. RRL should be held at a modest tactical weight (10\u201315%) for its McPhillamys option value and balance sheet quality, while BGL and CMM should be held at minimum weight or avoided for new capital entirely at current premiums \u2014 in a bullish gold tape, the opportunity cost of paying 30\u201340% over peers is too high when WGX and RMS offer superior fundamental quality at deep discounts, and HRN should be excluded from the portfolio until FID and financing terms are announced, at which point it transitions from a pre-production binary to a constructible, financeable asset worthy of a small speculative allocation.",
