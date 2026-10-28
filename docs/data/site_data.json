@@ -1,25 +1,25 @@
 {
- "generated_utc": "2026-10-27 15:16 UTC",
+ "generated_utc": "2026-10-28 15:53 UTC",
  "errors": [],
  "screener": [
   {
    "ticker": "WGX",
    "name": "Westgold Resrouces",
    "stage": "producer",
-   "price": 5.1,
-   "ev_oz": 265.4,
-   "adj_peer_ev_oz": 535.1,
-   "discount_pct": 50.4,
+   "price": 5.4,
+   "ev_oz": 278.7,
+   "adj_peer_ev_oz": 551.8,
+   "discount_pct": 49.5,
    "signal": "CHEAP \u2705"
   },
   {
    "ticker": "GMD",
    "name": "Genesis Minerals",
    "stage": "producer",
-   "price": 6.4,
-   "ev_oz": 474.3,
-   "adj_peer_ev_oz": 500.3,
-   "discount_pct": 5.2,
+   "price": 6.7,
+   "ev_oz": 492.9,
+   "adj_peer_ev_oz": 516.1,
+   "discount_pct": 4.5,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
@@ -27,39 +27,39 @@
    "name": "Northern Star Resources",
    "stage": "producer",
    "price": 25.4,
-   "ev_oz": 496.4,
-   "adj_peer_ev_oz": 496.6,
-   "discount_pct": 0.0,
+   "ev_oz": 497.8,
+   "adj_peer_ev_oz": 515.3,
+   "discount_pct": 3.4,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
    "ticker": "RMS",
    "name": "Ramelius Resources",
    "stage": "producer",
-   "price": 3.5,
-   "ev_oz": 504.1,
-   "adj_peer_ev_oz": 495.3,
-   "discount_pct": -1.8,
+   "price": 3.6,
+   "ev_oz": 516.9,
+   "adj_peer_ev_oz": 512.1,
+   "discount_pct": -0.9,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
    "ticker": "RRL",
    "name": "Regis Resources",
    "stage": "producer",
-   "price": 6.3,
-   "ev_oz": 516.1,
-   "adj_peer_ev_oz": 493.3,
-   "discount_pct": -4.6,
+   "price": 6.5,
+   "ev_oz": 533.3,
+   "adj_peer_ev_oz": 509.4,
+   "discount_pct": -4.7,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
    "ticker": "CMM",
    "name": "Capricorn Metals",
    "stage": "producer",
-   "price": 12.8,
-   "ev_oz": 594.3,
-   "adj_peer_ev_oz": 480.2,
-   "discount_pct": -23.8,
+   "price": 13.5,
+   "ev_oz": 631.0,
+   "adj_peer_ev_oz": 493.1,
+   "discount_pct": -28.0,
    "signal": "RICH  \ud83d\udea9"
   },
   {
@@ -67,96 +67,96 @@
    "name": "Bellevue Gold",
    "stage": "producer",
    "price": 1.4,
-   "ev_oz": 625.2,
-   "adj_peer_ev_oz": 475.1,
-   "discount_pct": -31.6,
+   "ev_oz": 639.1,
+   "adj_peer_ev_oz": 491.8,
+   "discount_pct": -30.0,
    "signal": "RICH  \ud83d\udea9"
   }
  ],
  "margin": {
-  "spot_aud": 5785,
-  "slope_per_100": 8,
-  "r2": 0.13,
+  "spot_aud": 5764,
+  "slope_per_100": 9,
+  "r2": 0.16,
   "rows": [
    {
     "ticker": "WGX",
     "aisc_aud_oz": 2802,
-    "margin": 2983.1,
-    "ev_oz": 265.4,
-    "fair_ev_oz": 475.5,
-    "mispricing_pct": 44.2
+    "margin": 2962.4,
+    "ev_oz": 278.7,
+    "fair_ev_oz": 489.1,
+    "mispricing_pct": 43.0
    },
    {
     "ticker": "RMS",
     "aisc_aud_oz": 1973,
-    "margin": 3812.1,
-    "ev_oz": 504.1,
-    "fair_ev_oz": 538.8,
-    "mispricing_pct": 6.4
-   },
-   {
-    "ticker": "GMD",
-    "aisc_aud_oz": 2797,
-    "margin": 2988.1,
-    "ev_oz": 474.3,
-    "fair_ev_oz": 475.9,
-    "mispricing_pct": 0.3
+    "margin": 3791.4,
+    "ev_oz": 516.9,
+    "fair_ev_oz": 560.6,
+    "mispricing_pct": 7.8
    },
    {
     "ticker": "NST",
     "aisc_aud_oz": 2651,
-    "margin": 3134.1,
-    "ev_oz": 496.4,
-    "fair_ev_oz": 487.1,
-    "mispricing_pct": -1.9
+    "margin": 3113.4,
+    "ev_oz": 497.8,
+    "fair_ev_oz": 502.1,
+    "mispricing_pct": 0.9
+   },
+   {
+    "ticker": "GMD",
+    "aisc_aud_oz": 2797,
+    "margin": 2967.4,
+    "ev_oz": 492.9,
+    "fair_ev_oz": 489.5,
+    "mispricing_pct": -0.7
    },
    {
     "ticker": "CMM",
     "aisc_aud_oz": 1617,
-    "margin": 4168.1,
-    "ev_oz": 594.3,
-    "fair_ev_oz": 566.0,
-    "mispricing_pct": -5.0
+    "margin": 4147.4,
+    "ev_oz": 631.0,
+    "fair_ev_oz": 591.3,
+    "mispricing_pct": -6.7
    },
    {
     "ticker": "RRL",
     "aisc_aud_oz": 3244,
-    "margin": 2541.1,
-    "ev_oz": 516.1,
-    "fair_ev_oz": 441.8,
-    "mispricing_pct": -16.8
+    "margin": 2520.4,
+    "ev_oz": 533.3,
+    "fair_ev_oz": 450.9,
+    "mispricing_pct": -18.3
    },
    {
     "ticker": "BGL",
     "aisc_aud_oz": 2604,
-    "margin": 3181.1,
-    "ev_oz": 625.2,
-    "fair_ev_oz": 490.7,
-    "mispricing_pct": -27.4
+    "margin": 3160.4,
+    "ev_oz": 639.1,
+    "fair_ev_oz": 506.2,
+    "mispricing_pct": -26.3
    }
   ]
  },
  "dashboard": {
   "regime": "BEAR",
-  "price": 5785,
-  "ma200": 6431,
-  "mom12m_pct": -8.9,
-  "stretch_pct": -10.0,
+  "price": 5765,
+  "ma200": 6425,
+  "mom12m_pct": -6.3,
+  "stretch_pct": -10.3,
   "stretch_pctile": 2,
   "macro": [
    {
     "name": "Real 10y yield",
-    "detail": "2.66%, +0.98pp over 12m",
+    "detail": "2.66%, +0.95pp over 12m",
     "reading": "headwind (rising)"
    },
    {
     "name": "US Dollar (DXY)",
-    "detail": "102.2, +3.5% over 12m",
+    "detail": "102.3, +3.7% over 12m",
     "reading": "headwind (USD rising)"
    },
    {
     "name": "5y breakeven infl.",
-    "detail": "2.47%, 3y z-score +0.76",
+    "detail": "2.45%, 3y z-score +0.63",
     "reading": "tailwind (infl. expectations elevated)"
    }
   ],
