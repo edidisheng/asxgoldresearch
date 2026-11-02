@@ -1,14 +1,14 @@
 {
- "generated_utc": "2026-10-30 15:46 UTC",
+ "generated_utc": "2026-11-02 19:23 UTC",
  "errors": [],
  "screener": [
   {
    "ticker": "WGX",
    "name": "Westgold Resrouces",
    "stage": "producer",
-   "price": 5.3,
-   "ev_oz": 274.7,
-   "adj_peer_ev_oz": 533.8,
+   "price": 5.2,
+   "ev_oz": 266.6,
+   "adj_peer_ev_oz": 517.3,
    "discount_pct": 48.5,
    "signal": "CHEAP \u2705"
   },
@@ -16,30 +16,30 @@
    "ticker": "GMD",
    "name": "Genesis Minerals",
    "stage": "producer",
-   "price": 6.4,
-   "ev_oz": 475.8,
-   "adj_peer_ev_oz": 500.2,
-   "discount_pct": 4.9,
-   "signal": "FAIR  \u26a0\ufe0f"
-  },
-  {
-   "ticker": "RMS",
-   "name": "Ramelius Resources",
-   "stage": "producer",
-   "price": 3.4,
-   "ev_oz": 489.8,
-   "adj_peer_ev_oz": 497.9,
-   "discount_pct": 1.6,
+   "price": 6.3,
+   "ev_oz": 468.1,
+   "adj_peer_ev_oz": 483.7,
+   "discount_pct": 3.2,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
    "ticker": "NST",
    "name": "Northern Star Resources",
    "stage": "producer",
-   "price": 25.3,
-   "ev_oz": 494.7,
-   "adj_peer_ev_oz": 497.1,
-   "discount_pct": 0.5,
+   "price": 24.1,
+   "ev_oz": 470.5,
+   "adj_peer_ev_oz": 483.3,
+   "discount_pct": 2.7,
+   "signal": "FAIR  \u26a0\ufe0f"
+  },
+  {
+   "ticker": "RMS",
+   "name": "Ramelius Resources",
+   "stage": "producer",
+   "price": 3.3,
+   "ev_oz": 478.7,
+   "adj_peer_ev_oz": 482.0,
+   "discount_pct": 0.7,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
@@ -47,121 +47,121 @@
    "name": "Regis Resources",
    "stage": "producer",
    "price": 6.2,
-   "ev_oz": 507.0,
-   "adj_peer_ev_oz": 495.0,
-   "discount_pct": -2.4,
+   "ev_oz": 496.9,
+   "adj_peer_ev_oz": 478.9,
+   "discount_pct": -3.8,
    "signal": "FAIR  \u26a0\ufe0f"
   },
   {
    "ticker": "CMM",
    "name": "Capricorn Metals",
    "stage": "producer",
-   "price": 13.1,
-   "ev_oz": 609.9,
-   "adj_peer_ev_oz": 477.9,
-   "discount_pct": -27.6,
+   "price": 12.7,
+   "ev_oz": 587.8,
+   "adj_peer_ev_oz": 463.8,
+   "discount_pct": -26.7,
    "signal": "RICH  \ud83d\udea9"
   },
   {
    "ticker": "BGL",
    "name": "Bellevue Gold",
    "stage": "producer",
-   "price": 1.4,
-   "ev_oz": 625.2,
-   "adj_peer_ev_oz": 475.3,
-   "discount_pct": -31.5,
+   "price": 1.3,
+   "ev_oz": 602.0,
+   "adj_peer_ev_oz": 461.4,
+   "discount_pct": -30.5,
    "signal": "RICH  \ud83d\udea9"
   }
  ],
  "margin": {
-  "spot_aud": 5565,
+  "spot_aud": 5662,
   "slope_per_100": 8,
   "r2": 0.15,
   "rows": [
    {
     "ticker": "WGX",
     "aisc_aud_oz": 2802,
-    "margin": 2763.5,
-    "ev_oz": 274.7,
-    "fair_ev_oz": 474.2,
+    "margin": 2860.2,
+    "ev_oz": 266.6,
+    "fair_ev_oz": 460.5,
     "mispricing_pct": 42.1
    },
    {
     "ticker": "RMS",
     "aisc_aud_oz": 1973,
-    "margin": 3592.5,
-    "ev_oz": 489.8,
-    "fair_ev_oz": 542.1,
-    "mispricing_pct": 9.6
-   },
-   {
-    "ticker": "GMD",
-    "aisc_aud_oz": 2797,
-    "margin": 2768.5,
-    "ev_oz": 475.8,
-    "fair_ev_oz": 474.6,
-    "mispricing_pct": -0.3
+    "margin": 3689.2,
+    "ev_oz": 478.7,
+    "fair_ev_oz": 523.8,
+    "mispricing_pct": 8.6
    },
    {
     "ticker": "NST",
     "aisc_aud_oz": 2651,
-    "margin": 2914.5,
-    "ev_oz": 494.7,
-    "fair_ev_oz": 486.6,
-    "mispricing_pct": -1.7
+    "margin": 3011.2,
+    "ev_oz": 470.5,
+    "fair_ev_oz": 472.0,
+    "mispricing_pct": 0.3
+   },
+   {
+    "ticker": "GMD",
+    "aisc_aud_oz": 2797,
+    "margin": 2865.2,
+    "ev_oz": 468.1,
+    "fair_ev_oz": 460.9,
+    "mispricing_pct": -1.6
    },
    {
     "ticker": "CMM",
     "aisc_aud_oz": 1617,
-    "margin": 3948.5,
-    "ev_oz": 609.9,
-    "fair_ev_oz": 571.2,
-    "mispricing_pct": -6.8
+    "margin": 4045.2,
+    "ev_oz": 587.8,
+    "fair_ev_oz": 551.0,
+    "mispricing_pct": -6.7
    },
    {
     "ticker": "RRL",
     "aisc_aud_oz": 3244,
-    "margin": 2321.5,
-    "ev_oz": 507.0,
-    "fair_ev_oz": 438.1,
-    "mispricing_pct": -15.7
+    "margin": 2418.2,
+    "ev_oz": 496.9,
+    "fair_ev_oz": 426.7,
+    "mispricing_pct": -16.5
    },
    {
     "ticker": "BGL",
     "aisc_aud_oz": 2604,
-    "margin": 2961.5,
-    "ev_oz": 625.2,
-    "fair_ev_oz": 490.4,
-    "mispricing_pct": -27.5
+    "margin": 3058.2,
+    "ev_oz": 602.0,
+    "fair_ev_oz": 475.6,
+    "mispricing_pct": -26.6
    }
   ]
  },
  "dashboard": {
   "regime": "BEAR",
-  "price": 5565,
-  "ma200": 6412,
-  "mom12m_pct": -8.4,
-  "stretch_pct": -13.2,
+  "price": 5662,
+  "ma200": 6406,
+  "mom12m_pct": -7.3,
+  "stretch_pct": -11.6,
   "stretch_pctile": 1,
   "macro": [
    {
     "name": "Real 10y yield",
-    "detail": "2.67%, +0.94pp over 12m",
+    "detail": "2.63%, +0.92pp over 12m",
     "reading": "headwind (rising)"
    },
    {
     "name": "US Dollar (DXY)",
-    "detail": "101.9, +2.4% over 12m",
+    "detail": "101.7, +1.9% over 12m",
     "reading": "neutral"
    },
    {
     "name": "5y breakeven infl.",
-    "detail": "2.47%, 3y z-score +0.75",
+    "detail": "2.46%, 3y z-score +0.69",
     "reading": "tailwind (infl. expectations elevated)"
    }
   ],
-  "cot_net_pct_oi": 25.9,
-  "cot_pctile_3y": 32,
+  "cot_net_pct_oi": 26.6,
+  "cot_pctile_3y": 37,
   "cot_note": "not extreme"
  },
  "quarterly_date": "2026-07-31",
